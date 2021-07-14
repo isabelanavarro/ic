@@ -1,0 +1,339 @@
+/* geral */
+* {
+    font-family: 'Rubik';
+}
+/*
+
+
+position: absolute;
+width: 1440px;
+height: 118px;
+left: -2px;
+top: 0px;
+
+
+
+
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #1D1D27;
+
+*/
+
+
+body
+{
+    min-height: 125vh;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #FFE797;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: .0rem;
+    padding-bottom: .5rem;
+}
+
+.row
+{
+    margin:0;
+    --bs-gutter-x: 1.9rem;
+}
+
+.container-fluid
+{
+    padding: 0;
+}
+
+.btn-primary
+{
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+    width: 170px;
+    height: 50px;
+    
+    
+}
+
+.btn-primary:hover
+{
+    background-color: #c28008;
+    border-color: #c28008;
+}
+
+/* navbar */
+
+.btn-primary9
+{
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+    width: 170px;
+    height: 60px;
+    color:#f7f7f7;
+    
+    
+}
+
+#navbar
+{
+    /*
+    background-color: #1D1D27;
+    
+    margin: 10px;*/
+
+    justify-content: space-between;
+    background-color: #1D1D27;
+    padding: 30px;
+    height: 70px;
+
+}
+
+#navbar a
+{
+    font-size: 18px;
+    color: #f7f7f7;
+}
+
+#navbar li
+{
+    padding-left: 40px;
+}
+
+#navbar a:hover
+{
+    color: #f2a340;
+}
+
+#navbar img{
+    width:200px;
+}
+
+/* search container */
+#search-container
+{
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1
+{
+    color: #f2a340;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Events list */
+
+#events-container
+{
+    padding: 50px;
+}
+
+#events-container h2
+{
+    margin-bottom: 10px;
+}
+
+#events-container .subtitle
+{
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+#cards-container
+{
+    display: flex;
+}
+
+#events-container .card
+{
+    flex: 1 1 0;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+}
+
+#events-container img
+{
+    max-height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-date
+{
+    font-size: 12px;
+    color: #ccc;
+}
+
+.card .card-title
+{
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-participants
+{
+    font-size: 14px;
+    color: #757575
+}
+
+/* footer */
+
+footer
+{
+    text-align: center;
+    background-color: #353e48;
+    color: #f7f7f7;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p
+{
+    margin-bottom: 0;
+}
+
+.home1{
+    color:#f7f7f7;
+    
+    text-align: center;
+    background-color: #1D1D27;
+    width: 90%;
+    height: 300px;
+    margin-top: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+}
+
+.home2{
+    color:#f7f7f7;
+    
+    text-align: center;
+    background-color: #1D1D27;
+    width: 90%;
+    height: 250px;
+    margin-top: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+}
+    
+
+
+.btn-cad{
+    align-items: center;
+    align-content: center;
+    width: 250px;
+    height: 65px;
+    font-family: Rubik;
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.btn-cad:hover{
+    background-color:rgb(255, 231, 151, 0.8) ;
+   
+}
+
+.container{
+    border-radius: 15px;
+    /**div*/
+    
+}
+
+.card{
+    border-radius:5px;
+    
+    /* Rectangle 6 */
+    color: #f7f7f7;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    width: 600px;
+    height: 700px;
+    margin-left: 40px;
+    margin-top:40px;
+
+background: #1D1D27;
+
+}
+
+
+
+.card-header{
+    font-size: 25px;
+    text-align: center;
+}
+
+.card2{
+    border-radius:5px;
+    margin-left: 40px;
+    margin-top:40px;
+    /* Rectangle 6 */
+    color: #f7f7f7;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    
+    background: #1D1D27;
+
+}
+
+.card4{
+    border-radius:5px;
+    margin-left: 40px;
+    margin-top:40px;
+    /* Rectangle 6 */
+    color: #f7f7f7;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    
+    background: #1D1D27;
+
+}
+
+.textocs{
+    text-align: center;
+    
+}
+
+.form-group label
+{
+font-weight: bold;
+text-align: justify;
+}

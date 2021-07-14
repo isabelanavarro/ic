@@ -1,0 +1,134 @@
+.tab{
+    padding-top: 50px;
+    
+}
+
+.tab .header{
+    display:flex;
+
+}
+
+.tab .header a{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    margin: auto;
+}
+.tab .header a:hover{
+    color: rgb(126, 119, 119);
+}
+
+.tab .header .volt{
+    margin-left: 100px;
+}
+
+.tab .header .ir{
+    margin-right: 100px;
+}
+
+
+.tab h1{
+    margin-bottom: 50px;
+}
+
+.tab table{
+    width: 40px;
+    margin: auto;
+    margin-bottom: 40px;
+    color: #fff;
+    border: none;
+}
+
+.tab table thead{
+    background-color:#1D1D27;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.tab table tbody{
+    background-color: #1D1D27;
+}
+
+.tab table tbody td .ed{
+    color: rgb(109, 187, 109);
+}
+.tab table tbody td .ed:hover{
+    color: rgb(91, 146, 91);
+}
+
+.tab table tbody td .de{
+    color: rgb(226, 72, 72);
+}
+.tab table tbody td .de:hover{
+    color: rgb(177, 67, 67);
+}
+
+.tab .pagination{
+    margin: auto;
+    color: #fff;
+    font-size: 25px;
+    justify-content: space-evenly;
+    width: 400px;
+    text-decoration: none;
+}
+
+.tab .pagination a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.tab td{
+    color: #fff;
+    font-size: 13px;
+}
+
+
+.btn-altm{
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+    width: 85px;
+    height: 25px;
+    
+}
+
+.btn-excluim{
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+    width: 85px;
+    height: 25px;
+    font-style: #fff;
+    
+}
+
+.btn-excluim:hover
+{
+    background-color: #c28008;
+    border-color: #c28008;
+}
+
+.btn-altm:hover
+{
+    background-color: #c28008;
+    border-color: #c28008;
+}
+
+
+.linhas{
+    display:flex;
+}
+
+.titulo{
+    align-items: center;
+    text-align: center;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    height: 90px;
+    vertical-align: middle;
+    text-align: center;
+}
