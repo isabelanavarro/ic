@@ -106,14 +106,13 @@ class RegisterController extends Controller
     public function store(StoreUpdatePost $request)
     {
         $data = $request->all();
-
+    /*
         if($request->foto('foto')->isValid()){
             $file = $request->foto->storeAs('public/users',$nameFile);
             $file = str_replace('public/','app/',$file);
             $data['foto'] = $file;
-        }
-
-        User::create($data);
+        }*/
+         User::create($data);
 
         //foto upload
         if($request->hasFile('foto') && $request->file('foto')->isValid()){
@@ -125,11 +124,16 @@ class RegisterController extends Controller
             $fotoName = md5($requestFoto->getClientOriginalName() . strtotime("now")) . "." . $extension;
 
             $request->foto->move(public_path('imgs\users'), $fotoName);
+           /* $foto = Storage::disk('public')->putFile('storage\app/public', $request->file('foto'));*/
+
+           
 
             $data->foto = $fotoName;
 
             $data->save();
         }
+
+
 
     }
 

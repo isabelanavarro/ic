@@ -13,13 +13,15 @@ class AddCamposTableUsers extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('cidade');
-            $table->string('numero');
-            $table->text('foto')->nullable();
-        });
+        
+            Schema::table('users', function (Blueprint $table) {
+                $table->string('cidade');
+                $table->string('numero');
+                $table->string('foto')->nullable();
+            });
+        
     }
-
+ 
     /**
      * Reverse the migrations.
      *
@@ -28,7 +30,7 @@ class AddCamposTableUsers extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            Schema::dropIfExists('users');
         });
     }
 }

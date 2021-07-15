@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateLivrosTable extends Migration
 {
-    /**
+        /**
      * Run the migrations.
      *
      * @return void
@@ -16,7 +16,7 @@ class CreateLivrosTable extends Migration
         Schema::create('livros', function (Blueprint $table) {
             $table->id();
  
-            $table->integer('users_id');
+            $table->unsignedBigInteger('users_id');
             $table->foreign('users_id')->references('id')->on('users');
             /*Auth::user()->id;*/
 
@@ -26,8 +26,11 @@ class CreateLivrosTable extends Migration
             $table->string('categoria');
             $table->string('classificação');
             $table->text('descricao');
-            $table->string('image', 100)->nullable();
-            $table->timestamps();
+            $table->string('image')->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+
+
         });
     }
 
