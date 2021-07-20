@@ -20,7 +20,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/cad_login.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/alt_exclui.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mostrar_todos.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/aluga.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">

@@ -20,7 +20,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/cad_login.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/perfil.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/cad_livros.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mostrar_livros.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">

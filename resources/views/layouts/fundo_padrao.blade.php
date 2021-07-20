@@ -28,24 +28,81 @@
                             <a href="/" class="nav-link">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/explorar')}}" class="nav-link">EXPLORAR</a>
+                            <a href="{{ url('/livros/mostrar_livros')}}" class="nav-link">EXPLORAR</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">SOBRE</a>
+                            <a href="{{ url('/avaliar')}}" class="nav-link">AVALIAR</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">MEUS LIVROS</a>
+                            <a href="{{ url('/perfil') }}" class="nav-link">MEUS LIVROS</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <div class="home1" >
+        <div class="home0">
             <br>
         <h4>Compartilhe as suas avaliações sobre livros e busque por novos!</h4>
+        <br>
+        <h5>uma rede ESPECIAL para VOCÊ, amante de livros. </h5><br>
+        
+        <form action="{{ route('livros.search')}}" method="post">
+        @csrf
+            <!--<input type="text" name="search" >
+            <label>buscar<label>
+            <button type="submit">Filtrar</button>-->
+
+            <div class="input">
+        <input type="text" required>
+        <label>Buscar:</label>
+        <div class="bar"></div>
+        <div class="highlight"></div>
+     </div>
+     <button type="submit">Filtrar</button>
+   
+
+        </form>
+
+
+        
+       </div>
+
+        <div class="home1" ><br>
+        <br>
+        <div class="texthome">
+        <h6>De.... Machado de Assis
+            <!--<a href="{{ url('/explorar')}}" style="color: #5a5a5e" class="texthome">Machado de Assis</a>-->
+        </h6>
+</div>
+
+        <br>
+      <!--      <br>
+        <h4>Compartilhe as suas avaliações sobre livros e busque por novos!</h4>
         <br><br>
-        <h5>uma rede ESPECIAL para VOCÊ, amante de livros. </h5>
+        <h5>uma rede ESPECIAL para VOCÊ, amante de livros. </h5><br><br><br>-->
+
+      <!--  <div class="livros">-->
+            <div class="img_home">
+            
+                <div class="img_menor">
+                    <img src="imgs/home/oalienista.jpg"><br>
+                    <img src="imgs/home/rating1.png">
+                </div>
+                
+                <div class="img_menor">
+                    <img src="imgs/home/memorias.jpg">
+                </div>
+
+                <div class="img_menor">
+                    <img src="imgs/home/dom.jpg">
+                </div>
+            
+           </div>
+       
+
+        
+
         </div>
 
         <div class="home2">
@@ -63,7 +120,7 @@
 
     @yield('content')
     <footer>
-        <p>HDC Events &copy; 2021</p>
+        <p>MR. BOOK &copy; 2021</p>
     </footer>
     <script  src = "https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" > </script>
     </body>

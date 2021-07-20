@@ -26,7 +26,7 @@ class CreateLivrosTable extends Migration
             $table->string('categoria');
             $table->string('classificação');
             $table->text('descricao');
-            $table->string('image')->nullable();
+            $table->string('image');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
 

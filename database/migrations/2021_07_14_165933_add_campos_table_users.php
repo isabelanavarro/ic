@@ -17,7 +17,7 @@ class AddCamposTableUsers extends Migration
             Schema::table('users', function (Blueprint $table) {
                 $table->string('cidade');
                 $table->string('numero');
-                $table->string('foto')->nullable();
+                $table->text('foto')->nullable();
             });
         
     }

@@ -36,13 +36,13 @@
                             <a href="/" class="nav-link">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/events/create" class="nav-link">EXPLORAR</a>
+                        <a href="{{ url('/livros/mostrar_livros')}}" class="nav-link">EXPLORAR</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">SOBRE</a>
+                        <a href="{{ url('/avaliar')}}" class="nav-link">AVALIAR</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">MEUS LIVROS</a>
+                        <a href="{{ url('/perfil') }}" class="nav-link">MEUS LIVROS</a>
                         </li>
                     </ul>
                 </div>

@@ -2,36 +2,13 @@
 * {
     font-family: 'Rubik';
 }
-/*
-
-
-position: absolute;
-width: 1440px;
-height: 118px;
-left: -2px;
-top: 0px;
-
-
-
-
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-background: #1D1D27;
-
-*/
-
 
 body
 {
     min-height: 125vh;
     padding-bottom: 100px;
     position: relative;
-    background-color: #FFE797;
+    background-color: #FF96BD;
 }
 
 .navbar {
@@ -70,17 +47,6 @@ body
 }
 
 /* navbar */
-
-.btn-primary9
-{
-    background-color: #f2a340;
-    border: 2px solid #c28008;
-    width: 170px;
-    height: 60px;
-    color:#f7f7f7;
-    
-    
-}
 
 #navbar
 {
@@ -252,9 +218,10 @@ footer p
     align-content: center;
     width: 250px;
     height: 65px;
+    border-radius: 20px;
     font-family: Rubik;
-    background-color: #f2a340;
-    border: 2px solid #c28008;
+    
+    background-color: rgba(255, 231, 151);
     cursor: pointer;
     margin-top: 30px;
     font-weight: bold;
@@ -271,61 +238,66 @@ footer p
     
 }
 
-.card{
+.card3{
     border-radius:5px;
     
     /* Rectangle 6 */
     color: #f7f7f7;
     position: absolute;
+
     align-content: center;
     text-align: center;
+    align-items: center;
     width: 600px;
-    height: 750px;
-    margin-left: 40px;
+    height: 625px;
+    margin-left: 340px;
     margin-top:40px;
-
-background: #1D1D27;
-
-}
-
-
-
-.card-header{
-    font-size: 25px;
-    text-align: center;
-}
-
-.card2{
-    border-radius:5px;
-    margin-left: 40px;
-    margin-top:40px;
-    /* Rectangle 6 */
-    color: #f7f7f7;
-    position: absolute;
-    align-content: center;
-    text-align: center;
-    width: 600px;
-    height: 300px;
-    
+    margin-bottom: 20px;
     background: #1D1D27;
 
 }
 
 .card4{
     border-radius:5px;
-    margin-left: 40px;
-    margin-top:40px;
+    
     /* Rectangle 6 */
     color: #f7f7f7;
     position: absolute;
+
     align-content: center;
     text-align: center;
+    align-items: center;
     width: 600px;
-    height: 450px;
-    
+    height: 625px;
+    margin-left: 260px;
+    margin-top:40px;
+    margin-bottom: 20px;
     background: #1D1D27;
 
 }
+
+
+.btn-primary
+{
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+    width: 170px;
+    height: 50px;
+    
+    
+}
+
+.btn-primary:hover
+{
+    background-color: #c28008;
+    border-color: #c28008;
+}
+
+.card-header{
+    font-size: 25px;
+    text-align: center;
+}
+
 
 .textocs{
     text-align: center;
@@ -336,4 +308,18 @@ background: #1D1D27;
 {
 font-weight: bold;
 text-align: justify;
+align-items: center;
+
+}
+
+.tab table thead {
+    background-color: #1D1D27;
+    height: 70px;
+}
+
+.form-cad{
+    max-width: max-content;
+    max-height: max-content;
+    align-content: center;
+    margin-left: 80px;
 }

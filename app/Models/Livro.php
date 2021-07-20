@@ -10,13 +10,14 @@ use Illuminate\Foundation\Livros;
 class Livro extends Model
 {
     use HasFactory;
-
+    
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
+        'livro',
         'users_id',
         'namel',
         'autor',

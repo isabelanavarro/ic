@@ -204,18 +204,116 @@ footer p
     margin-bottom: 0;
 }
 
+.home0{
+    color:#f7f7f7;
+    border-radius:5px;
+    text-align: center;
+    background-color: #1D1D27;
+    width: 80%;
+    height: 220px;
+    margin-top: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+}
+
+.home_1{
+    color:#f7f7f7;
+    border-radius:5px;
+    text-align: center;
+    background-color: #1D1D27;
+    width: 600px;
+    height: 200px;
+    margin-top: auto;
+    justify-content: center;
+    margin-left: 316px;
+    margin-right: auto;
+    margin-top:60px;
+}
+
+
+.texthome{
+    text-align: left;
+    margin-left: 30px;
+}
+
 .home1{
     color:#f7f7f7;
     border-radius:5px;
     text-align: center;
     background-color: #1D1D27;
     width: 80%;
-    height: 300px;
+    height: 700px;
     margin-top: auto;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-top:60px;
+}
+
+
+.livros{
+    color:#f7f7f7;
+    border-radius:5px;
+    text-align: center;
+    background-color: #f7f7f7;
+    width: 25%;
+    height: 50px;
+    margin-top: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+    display:inline;
+    position:absolute;
+    
+}
+
+.img_menor{
+    max-width: 300px;
+    max-height:500px;
+    width: auto;
+    height: 1200px;
+    position:relative;
+    display:flex;
+    flex:initial;
+    align-items: center;
+    background-color: #34343d;
+    margin-left: 2%;
+    border-radius:5px;
+    vertical-align:initial;
+    border-style: solid;
+    border-color: rgb(52,52,5);
+}
+
+.img_home{
+    max-width:600px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+    position:relative;
+    display:flex;
+    flex:initial;
+    align-items: center;
+    margin-left: 30px;
+    vertical-align:unset;
+}
+
+
+
+.img_home img{
+    max-width:300px;
+    max-height:180px;
+    width: auto;
+    height: auto;
+  /*  margin-left: 10px;*/
+    margin-left: 90px;
+    margin-top: 18px;
+    display:flex;
+    padding-right: 110px;
+    padding-bottom: 2px;    
+    margin-top: -260px;
 }
 
 .home2{
@@ -253,3 +351,33 @@ footer p
     background-color:#ad7e44 ;
    
 }
+
+
+.place::placeholder{
+    color:#1D1D27;
+    border-style: hidden;
+    /*background-color: #757575;
+    background-size: 45px;*/
+    font-size: 15px;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 5px;
+    height: 45px;
+    
+}
+
+button{
+    background-color: #757575;
+}
+
+/*
+*{
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+/*Average Styling */
