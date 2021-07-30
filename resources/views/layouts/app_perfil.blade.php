@@ -20,6 +20,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mostrar_livros.css') }}" rel="stylesheet">
     <link href="{{ asset('css/perfil.css') }}" rel="stylesheet">
 </head>
 <body>

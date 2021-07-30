@@ -23,6 +23,7 @@
     <link href="{{ asset('css/alt_exclui.css') }}" rel="stylesheet">
     <link href="{{ asset('css/mostrar_todos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/aluga.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/perfil.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">

@@ -2,16 +2,19 @@
 
 @section('content')
 
-<div class="card3">
+<div class="card6">
 <form action="{{ url('/update_user', $user->id)}}" method="POST" enctype="multipart/form-data" class="form-cad"> 
     <br><br>
 <div class="form-group">
-
-<h4>Alteração de perfil</h4>
+<div class="textocs">              
+<h4>ALUGUE JÁ! </h4>
+<h5>CONTATE O DONO DO LIVRO.</h5>
+</div>
         {{ csrf_field() }}  <!--  disable -->
 <br>
-        <input type="text" disabled="disabled" class="form-control cad-tam" name="name" placeholder="Nome:" value="{{ $user->name }}">
-    </div>
+
+<input type="text" disabled="disabled" class="form-control cad-tam" name="name" placeholder="Nome:" value="{{ $user->name }}">
+            </div>
     <br>
     <div class="form-group">
 
@@ -20,12 +23,12 @@
     <br>
     <div class="form-group">
 
-        <input type="text" class="form-control cad-tam" name="cidade" placeholder="cidade:" value="{{ $user->cidade }}">
+        <input type="text" disabled="disabled" class="form-control cad-tam" name="cidade" placeholder="cidade:" value="{{ $user->cidade }}">
     </div>
     <br>
     <div class="form-group">
 
-        <input type="number" class="form-control cad-tam" name="numero" placeholder="número:" value="{{ $user->numero }}">
+        <input type="number" disabled="disabled" class="form-control cad-tam" name="numero" placeholder="número:" value="{{ $user->numero }}">
     </div>
     <br>
    

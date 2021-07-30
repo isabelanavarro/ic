@@ -88,7 +88,7 @@ class LivroController extends Controller
             'categoria'=> $request['categoria'],
             'classificação'=>$request['classificação'] ,
             'descricao'=>$request['descricao'],
-            'image'=>$request['image'],
+            'image'=>$data['image'],
         ]);
         return view('livros/cadastro');
 
@@ -97,7 +97,6 @@ class LivroController extends Controller
 
     public function index()
     {
-        
         $livro = DB::select('select * from livros');
         return view('livros/mostrar_livros', [
             'livro' => $livro,

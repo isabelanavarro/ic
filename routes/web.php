@@ -24,11 +24,11 @@ Auth::routes();
 /*Route::post('/livros/search',  [App\Http\Controllers\LivroController::class, 'search'])->name('livros.search');*/
 Route::post('/upload', 'UploadFoto@store')->name('upload.foto.user');
 
-Route::get('/altera_user/{id}', [App\Http\Controllers\Auth\RegisterController::class, 'edit']);
-Route::post('/update_user/{id}', [App\Http\Controllers\Auth\RegisterController::class, 'update']);
+Route::get('/altera_user/{id}', [App\Http\Controllers\UsuarioController::class, 'edit']);
+Route::post('/update_user/{id}', [App\Http\Controllers\UsuarioController::class, 'update']);
 
-Route::get('/del_user/{id}', [App\Http\Controllers\Auth\RegisterController::class, 'delete']);
-Route::post('/delete_user/{id}', [App\Http\Controllers\Auth\RegisterController::class, 'destroy']);
+Route::get('/del_user/{id}', [App\Http\Controllers\UsuarioController::class, 'delete']);
+Route::post('/delete_user/{id}', [App\Http\Controllers\UsuarioController::class, 'destroy']);
 
 Route::get('/user_area/{id}', [App\Http\Controllers\Auth\RegisterController::class, 'show']);
 

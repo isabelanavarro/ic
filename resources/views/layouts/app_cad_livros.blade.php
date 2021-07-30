@@ -23,6 +23,10 @@
     <link href="{{ asset('css/perfil.css') }}" rel="stylesheet">
     <link href="{{ asset('css/cad_livros.css') }}" rel="stylesheet">
     <link href="{{ asset('css/mostrar_livros.css') }}" rel="stylesheet">
+
+    
+
+
 </head>
 <body>
     <div id="app">

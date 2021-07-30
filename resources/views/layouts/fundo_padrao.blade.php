@@ -15,6 +15,114 @@
         <!-- css ds aplicação -->
         <link rel="stylesheet" href="/css/home.css">
         <script src="/js/script.js"></script>
+        <style>  
+            h1{
+            text-align: center;
+            font-weight: 100;
+            margin: 15% auto 5%;
+            }
+            h1 span {
+            display:block;
+            font-size:0.7em;
+            color:gray;
+            margin-top:1%;
+            }
+            .input{
+                margin: 0% 10%;
+                position: relative;
+                width: fit-content;
+            }
+            input{
+                padding: 10px 10px 10px 5px;
+                font-size: 15px;
+                width: 280px;
+                border:  1px solid ;
+                color: #f7f7f7;
+                align-content: center;
+                border-color: transparent transparent gray;
+                background-color: transparent; 
+                margin-left: 265px;
+            }
+            input:focus{outline: none;}
+            /*Label */
+            label{
+                position: absolute;
+                margin-left: 265px;
+                top: 30%;
+                font-size: 18px;
+                color: rgb(165, 165, 165);
+                left: 50%;
+                z-index: -1;
+                pointer-events: none;
+                transition: all 0.3s  ;
+                -webkit-transition: all 0.3s  ;
+                -moz-transition: all 0.3s  ;
+                -ms-transition: all 0.3s  ;
+                -o-transition: all 0.3s  ;
+            }
+            /* Activate State */
+            input:focus +label , input:valid + label {
+                font-size: 12px;
+                color: rgb(148, 98, 255);
+                top: -1%;
+                transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -ms-transition: all 0.3s;
+                -o-transition: all 0.3s;
+            }
+            /*End Label */
+            /*Bar*/
+            .bar{
+                width: 50%;
+                height: 2px;
+                position: absolute;
+                background-color:  #f2a340;
+                
+                top: calc(150% - 25px);
+                left: 270px;
+                transform: scaleX(0.0);
+                -webkit-transform: scaleX(0.0);
+                -moz-transform: scaleX(0.0);
+                -ms-transform: scaleX(0.0);
+                -o-transform: scaleX(0.0);  
+            }
+            /*Activate State */
+            input:focus ~ .bar ,input:valid ~ .bar  {
+                transform: scaleX(1.0);
+                -webkit-transform: scaleX(1.0);
+                -moz-transform: scaleX(1.0);
+                -ms-transform: scaleX(1.0);
+                -o-transform: scaleX(1.0);
+                transition: transform 0.3s ;
+                -webkit-transition: transform 0.3s ;
+                -moz-transition: transform 0.3s ;
+                -ms-transition: transform 0.3s ;
+                -o-transition: transform 0.3s ;
+            }
+            /*End Bar */
+            /*Highlight */
+            .highlight{
+                width: 100%;
+                height: 85%;
+                position: absolute;
+                background-color:  #f2a340;
+                top: 15%;
+                left: 0;
+                visibility: hidden;
+                z-index: -1; 
+            }
+            input:focus ~ .highlight{
+                width: 0;
+                visibility: visible;
+                transition: all 0.09s linear;
+                -webkit-transition: all 0.09s linear;
+                -moz-transition: all 0.09s linear;
+                -ms-transition: all 0.09s linear;
+                -o-transition: all 0.09s linear;
+            }
+    
+        </style>
     </head>
     <body>
         <header>
@@ -45,9 +153,9 @@
             <br>
         <h4>Compartilhe as suas avaliações sobre livros e busque por novos!</h4>
         <br>
-        <h5>uma rede ESPECIAL para VOCÊ, amante de livros. </h5><br>
+        <h5>uma rede ESPECIAL para VOCÊ, amante de livros. </h5>
         
-        <form action="{{ route('livros.search')}}" method="post">
+        <form action="{{ route('livros.pesquisa')}}" method="post">
         @csrf
             <!--<input type="text" name="search" >
             <label>buscar<label>
@@ -58,8 +166,8 @@
         <label>Buscar:</label>
         <div class="bar"></div>
         <div class="highlight"></div>
-     </div>
-     <button type="submit">Filtrar</button>
+     </div><br>
+     <button type="submit" class="btn-primaryab">BUSCAR</button>
    
 
         </form>
@@ -69,36 +177,12 @@
        </div>
 
         <div class="home1" ><br>
+       &nbsp; &nbsp; &nbsp; &nbsp; Machado de Assis na Mr. Book:
         <br>
-        <div class="texthome">
-        <h6>De.... Machado de Assis
-            <!--<a href="{{ url('/explorar')}}" style="color: #5a5a5e" class="texthome">Machado de Assis</a>-->
-        </h6>
-</div>
+        <img src="imgs/home/memorias.jpg"> &nbsp; &nbsp;&nbsp;&nbsp;
+        <img src="imgs/home/oalienista.jpg">&nbsp; &nbsp;&nbsp;
+        <img src="imgs/home/dom.jpg"><br><br><br><br>
 
-        <br>
-      <!--      <br>
-        <h4>Compartilhe as suas avaliações sobre livros e busque por novos!</h4>
-        <br><br>
-        <h5>uma rede ESPECIAL para VOCÊ, amante de livros. </h5><br><br><br>-->
-
-      <!--  <div class="livros">-->
-            <div class="img_home">
-            
-                <div class="img_menor">
-                    <img src="imgs/home/oalienista.jpg"><br>
-                    <img src="imgs/home/rating1.png">
-                </div>
-                
-                <div class="img_menor">
-                    <img src="imgs/home/memorias.jpg">
-                </div>
-
-                <div class="img_menor">
-                    <img src="imgs/home/dom.jpg">
-                </div>
-            
-           </div>
        
 
         
@@ -107,11 +191,11 @@
 
         <div class="home2">
             <br>
-        <h5>Cadastre-se já na Mr. Book.<h5>
+        <h5>Cadastre-se já na Mr. Book para conhecer outros leitores.<h5>
+        <h6></h6>
 
-
-                <a href="{{ url('/register')}}"><button class="btn-cad">Cadastrar</button></a><br>
-                <a href="{{ url('/login')}}"><button class="btn-cad">Login</button></a>
+                <a href="{{ url('/register')}}"><button class="btn-cad">CADASTRAR</button></a><br>
+                <a href="{{ url('/login')}}"><button class="btn-cad">LOGIN</button></a>
 
                
         </div>
